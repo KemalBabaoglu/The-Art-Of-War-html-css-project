@@ -1,6 +1,6 @@
 # The Art of War HTML & CSS Project
 
-[Live Demo](https://hbilgil.github.io/art-of-war-html-css-project/):point_left:
+[Live Demo](https://KemalBabaoglu.github.io/Art-Of-War-html-css-project/):point_left:
 
 
 ## Project Reviews
