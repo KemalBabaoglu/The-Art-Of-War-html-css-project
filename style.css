@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+#welcome-sec {
+    background-image: url(images/main.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px 40px 20px 40px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img {
+
+    width: 250px;
+
+}
+
+
+header nav {
+    padding-top: 30px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 1px solid white;
+
+
+}
+
+header nav ul a:hover {
+    color: black;
+    text-shadow: 2px 2px 3px white
+}
+
+header nav ul a:active {
+    color: black;
+    text-shadow: 2px 2px 3px white
+}
+
+#welcome-text {
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 2px black
+}
+
+#welcome-text h1 {
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+
+}
+
+#welcome-text p {
+    font-size: 1.1rem;
+}
+
+
+
+
+/* ABOUT ALANI */
+
+#about {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    gap: 100px;
+
+}
+
+#about-text {
+    width: 60%;
+}
+
+#about-text h1 {
+    font-size: 3.5rem;
+    border-bottom: solid 2px white;
+    margin-bottom: 2rem;
+}
+
+#about-text p {
+    font-size: 0.9rem;
+}
+
+#about .image {
+    width: 40%;
+
+}
+
+#about img {
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+
+}
+
+#battle {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.215) 0%, black 80%),
+        url(/images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-image: radial-gradient(circle 0, 0, 60%black);
+}
+
+#battle .heading {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#battle .heading h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+    display: inline-block;
+    color: black;
+    background-color: gray;
+    margin-bottom: 50px;
+
+}
+
+#battle .heading h5 {
+    font-size: 1.2rem;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 84%;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+
+
+.box {
+    border: 0.2px solid white;
+    padding: 0.5rem;
+    height: auto;
+    width: 400px;
+
+}
+
+.boxes :nth-child(5) {
+
+    width: 820px;
+}
+
+.box h1 {
+    color: crimson;
+    font-size: 1.2rem;
+
+}
+
+.box p {
+    font-size: 0.9rem;
+}
+
+#opinions {
+    background-image: url(images/sec-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.opinions-text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opinions-text p {
+    font-size: 1.1rem;
+}
+
+.opinions-text h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 15px;
+}
+
+.opinions-text :nth-child(3) {
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+
+.opinions-text button {
+    width: 150px;
+    padding: 6px 10px;
+    background-color: crimson;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.opinions-text button:hover {
+    background-color: black;
+    color: crimson;
+    transition: 0.5s;
+}
+
+.opinions-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    width: 550px;
+}
+
+.opinions-card {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(43, 41, 41);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.user {
+    display: flex;
+    gap: 15px;
+}
+
+.user-info h1 {
+    font-size: 1.2rem;
+    color: crimson;
+}
+
+.profession {
+    color: rgb(172, 169, 169);
+    font-size: 0.9rem;
+}
+
+.comment {
+    font-size: 0.9rem;
+    padding: 0 10px;
+}
+
+.date {
+    color: rgb(172, 169, 169);
+    font-size: 0.8rem;
+    padding-top: 10px;
+
+}
+
+.opinions-card:nth-child(2) {
+    align-self: flex-start;
+}
+
+@media (max-width: 1200px) {
+    #about {
+        padding: 0 80px;
+        gap: 50px;
+    }
+
+    #about-text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #about {
+        padding: 0 40px;
+    }
+
+    #about-text h1 {
+        font-size: 3rem;
+
+    }
+
+    #battle .heading h1 {
+        font-size: 2.6rem;
+    }
+
+    #battle .box {
+        width: 350px;
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 720px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    #about-text {
+        width: 50%;
+
+    }
+
+    #about image {
+        width: 50%;
+    }
+
+    #about img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .opinions-card:nth-child(2) {
+        align-self: auto;
+    }
+}
+
+
+
+@media (max-width: 875px) {
+    #welcome-text {
+        width: 600px;
+    }
+
+    #battle .heading h1 {
+        font-size: 2.2rem;
+    }
+
+    #battle .box {
+        width: 300px;
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 620px;
+    }
+
+}
+
+
+
+@media (max-width: 790px) {
+    header img {
+        width: 200px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    header nav ul a {
+        font-size: 1.1rem;
+
+    }
+
+    #about {
+        padding: 0 10px;
+    }
+
+    #about img {
+        height: 600px;
+    }
+}
+
+
+@media (max-width: 755px) {
+
+    #battle .boxes {
+        width: 86%;
+    }
+
+    #battle .heading h1 {
+        font-size: 1.9rem;
+    }
+
+    #battle .heading h5 {
+        font-size: 1rem;
+    }
+
+    #battle .box {
+        width: 280px;
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 580px;
+    }
+
+
+    .opinions-cards {
+        width: auto;
+    }
+
+    .opinions-card {
+        width: 350px;
+        height: 200px;
+
+    }
+}
+
+
+
+
+@media (max-width: 695px) {
+    header nav ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    header nav ul a {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    #welcome-text {
+        width: 500px;
+    }
+
+    #welcome-text h1 {
+        font-size: 3rem;
+    }
+
+
+    #about-text h1 {
+        font-size: 1.8rem;
+    }
+
+    #battle .boxes {
+        width: 92%;
+        gap: 10px;
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 570px;
+    }
+
+    #opinions {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .opinions-text {}
+
+    .opinions-card {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    header img {
+        width: 150px;
+    }
+
+    #welcome-text h1 {
+        font-size: 2.6rem;
+    }
+
+    #welcome-text p {
+        font-size: 1rem;
+    }
+
+    #about {
+        padding: 0px 7px;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+
+    #about-text {
+        width: 98%;
+    }
+
+    #about-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #about-text p {
+        font-size: 0.7rem;
+    }
+
+    #about .image {
+        min-width: 250px;
+
+    }
+
+    #about img {
+        height: 350px;
+        min-width: 250px;
+        margin: auto;
+
+    }
+
+    #battle .heading h1 {
+        font-size: 1.7rem;
+        letter-spacing: 0.6rem;
+    }
+
+    #battle .heading h5 {
+        font-size: 1rem;
+    }
+
+    #battle .box {
+        width: 250px;
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 510px;
+    }
+
+    .opinions-text {
+        padding-top: 20px;
+        width: 90%;
+
+        text-align: center;
+
+    }
+
+    #opinions {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0px;
+
+    }
+
+    .opinions-cards {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .opinions-card {
+        gap: 10px;
+        width: 95%;
+        height: auto;
+        padding: 5px 2px;
+        margin: auto;
+    }
+
+    .opinions-card:nth-child(2) {
+        align-self: auto;
+    }
+
+    .opinions-text {
+        width: 100%;
+
+        gap: 5px;
+        margin: auto;
+    }
+
+    .opinions-text button {
+        margin: auto;
+
+    }
+
+    .opinions-text h1 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    .user-info h1 {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 585px) {
+    #welcome-sec header{
+        flex-direction: column;
+    }
+    #welcome-sec {
+        padding: 40px 5px 20px 5px;
+    }
+
+    #welcome-text {
+        width: 450px;
+    }
+
+    #welcome-text h1 {
+        font-size: 2.2rem;
+    }
+
+    #welcome-text p {
+        font-size: 0.9rem;
+    }
+   
+   header nav ul{
+    justify-content: center;
+   }
+    header nav ul a {
+        font-weight: 600;
+       
+    }
+
+    #battle .heading {
+        padding-top: 40px;
+
+    }
+
+    #battle .heading h1 {
+
+        letter-spacing: 0.3rem;
+    }
+
+    #battle .box {
+        width: 400px;
+        height: auto;
+    }
+
+
+    #battle .box:nth-child(5) {
+
+        width: 400px;
+        height: auto;
+    }
+
+    #battle .boxes {
+        padding-top: 15px;
+    }
+
+
+    .opinions-text h5 {
+        font-size: 0.9rem;
+    }
+
+    .opinions-cards {
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+
+    .comment {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 490px) {
+    
+
+    #welcome-text h1 {
+        font-size: 2rem;
+    }
+
+    #welcome-text p {
+        font-size: 0.8rem;
+    }
+
+    #welcome-text {
+        width: 400px;
+    }
+
+    #about {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    #about-text h1 {
+        font-size: 1.4rem;
+    }
+
+    #about-text p {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 460px) {
+   
+
+    #about {
+        gap: 40px;
+    }
+
+    #about-text h1 {
+        font-size: 1.1rem;
+    }
+
+    #about-text h1 {
+        margin-bottom: 0.75rem;
+    }
+
+    #about .image {
+        width: 250px;
+    }
+
+    #about img {
+        width: 250px;
+    }
+
+    #battle .heading h1 {
+
+        letter-spacing: 0.1rem;
+    }
+
+    #battle .boxes {
+        width: 100%;
+    }
+
+    #battle .box {
+        width: 390px;
+        height: 120px;
+        height: auto;
+    }
+
+
+    #battle .box:nth-child(5) {
+
+        width: 390px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .opinions-cards {
+
+        gap: 3px;
+    }
+
+    .opinions-card {
+        width: 96%;
+        height: auto;
+    }
+
+    .opinions-text {
+        width: 100%;
+    }
+
+    .comment {
+        font-size: 0.75rem;
+    }
+
+    #battle .box {
+        width: 340px;
+        height: auto;
+    }
+
+
+    #battle .box:nth-child(5) {
+
+        width: 340px;
+        height: auto;
+    }
+}
+
+@media (max-width: 410px) {
+    
+
+    #welcome-text {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 380px) {
+  
+    header nav {
+        padding-top: 15px;
+    }
+
+
+    header nav ul a {
+        font-size: 0.9rem;
+    }
+
+    #welcome-text {
+        width: 320px;
+    }
+
+    #welcome-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #welcome-text p {
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media (max-width: 365px) {
+    header nav ul a {
+        font-size: 0.85rem;
+    }
+
+    #welcome-text {
+        width: 300px;
+    }
+
+    #welcome-sec {
+        padding: 40px 1px 20px 1px;
+    }
+
+    #about {
+        gap: 5px;
+    }
+
+    #about .image {
+        width: 250px;
+    }
+
+    #about img {
+        width: 250px;
+    }
+
+
+    #battle .heading h1 {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #battle .heading h5 {
+        font-size: 1rem;
+    }
+
+    #battle .box {
+        width: 300px;
+
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 300px;
+    }
+
+
+    #battle .box h1 {
+        font-size: 1rem;
+    }
+
+    #battle .box p {
+        font-size: 0.75rem;
+    }
+
+    .opinions-text h1 {
+        padding: 0;
+    }
+
+    .date {
+        font-size: 0.6rem;
+    }
+
+    .comment {
+        font-size: 0.6rem;
+    }
+
+    #about .image {
+        width: 250px;
+    }
+
+    #about img {
+        width: 250px;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    header nav ul a {
+        font-size: 0.8rem;
+    }
+
+   
+
+    #welcome-text {
+        width: 280px;
+    }
+
+    #battle .heading h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+    }
+
+    #battle .heading h5 {
+        font-size: 1rem;
+    }
+
+    #battle .box {
+        width: 270px;
+
+    }
+
+    #battle .box:nth-child(5) {
+
+        width: 270px;
+    }
+
+
+}
+
+@media (max-width: 300px) {
+    #about-text h1 {
+        font-size: 1.1rem;
+    }
+
+
+
+
+}
